@@ -1,0 +1,85 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.half-cover1 {
+  /* The image used */
+  background-image: url('http://www.wmbfnews.com/resizer/4iJ6_Iu1TVdDQhOTIiXC2G8C7Hk=/1200x600/arc-anglerfish-arc2-prod-raycom.s3.amazonaws.com/public/SG7U7LPVRNHZTDZDU5TT7SRYSQ.jpg');
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #474545;
+  background-blend-mode: overlay;
+  opacity: 0.85;
+}
+
+.half-cover2 {
+  /* The image used */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWK2u1WPcqwIqWqM0Cu5dCDnFMdwgjMT1X42QYFIKNR3C_F8SKcg');
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #474545;
+  background-blend-mode: overlay;
+  opacity: 0.85;
+}
+
+.half-cover3 {
+  /* The image used */
+  background-image: url('https://rotatingproxies.com/blog/wp-content/uploads/2017/07/search-engine-scrape-edited-1200x600.png');
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #474545;
+  background-blend-mode: overlay;
+  opacity: 0.85;
+}
+
+.centered {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*Back to top button*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: white;
+  opacity: 0.9;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>EntertainNavigator - Entertainment Finder</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/customize.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <!--Navbar-->
+  {{> navbar}}
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="backtotop.png" alt="Lbacktotop" style="width:60px;"></button>
+
+  <!-- Begin page content -->
+  <div class="half-cover3">
+    <div class="text-center centered">
+      <div class="container">
+        <h1 class="display-4" style="color:white">History</h1>
+        <p class="lead" style="color:white">Your Search history will be save.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <form action="/" method="post">
+      <button class="btn btn-outline-danger btn-lg mt-4" type="submit" formaction="/delete">Delete all records</button>
+    </form>
+    <br>
+    <table class="table table-hover">
+      {{#list items}}<tr>
+        <td>{{name}}</td>
+        <td>{{address}}</td>
+        <td>{{rating}}</td>
+        <td><img src={{photo_reference}} width="200" height="200"></td>
+      </tr>{{/list}}
+    </table>
+  </div>
+
+  <script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://localhost:3000/history -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>EntertainNavigator - Entertainment Finder</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="./EntertainNavigator - Entertainment Finder_files/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./EntertainNavigator - Entertainment Finder_files/customize.css"
+    />
+    <script src="./EntertainNavigator - Entertainment Finder_files/jquery.min.js.download"></script>
+    <script src="./EntertainNavigator - Entertainment Finder_files/popper.min.js.download"></script>
+    <script src="./EntertainNavigator - Entertainment Finder_files/bootstrap.min.js.download"></script>
+
+    <style>
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: rgb(212, 185, 185);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div id="myDIV">
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top "
+        style="background: transparent; font-size:20px"
+      >
+        <a
+          class="navbar-brand"
+          href="http://localhost:3000/"
+          style="font-family:&#39;Trebuchet"
+          >EntertainNavigator</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:3000/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:3000/form">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:3000/history"
+                >Search History</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:3000/about"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <button
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+      style="display: block;"
+    >
+      <img
+        src="./EntertainNavigator - Entertainment Finder_files/backtotop.png"
+        alt="Lbacktotop"
+        style="width:60px;"
+      />
+    </button>
+
+    <!-- Begin page content -->
+    <div class="half-cover3">
+      <div class="text-center centered">
+        <div class="container">
+          <h1 class="display-4" style="color:white">History</h1>
+          <p class="lead" style="color:white">
+            Your Search history will be save.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <form action="http://localhost:3000/" method="post">
+        <button
+          class="btn btn-outline-danger btn-lg mt-4"
+          type="submit"
+          formaction="/delete"
+        >
+          Delete all records
+        </button>
+      </form>
+      <br />
+      <table class="table table-hover">
+        <thead class="thead-light">
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Photo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aquapure Tech</td>
+            <td>
+              City Mall, S-0-23, Block E, Jalan Lintas, 88300, Kota Kinabalu,
+              Sabah
+            </td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/noimage.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>TGV Cinemas</td>
+            <td>182, Jalan Magazine, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2017-05-08.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Mmcineplexes prangin mall</td>
+            <td>
+              No.33, Level 5, 09 Prangin Mall Jalan Lim Chew, Jalan Dr Lim Chwee
+              Leong, George Town
+            </td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/IMG_20180411_190047.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Majestic Theatre</td>
+            <td>31, Jalan Phee Choon, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/IMG_20180908_154422.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>mmCineplexes</td>
+            <td>Jalan Dr Lim Chwee Leong, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2018-04-11.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>الثري دي</td>
+            <td>59,, 1, Jalan Green Hall, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/20181102_202418.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>R2R Motor Club</td>
+            <td>Jalan Kerongsang, Sek 11/ 6 B, 21, Shah Alam</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/noimage.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>FIVE ROSE FAMILY KARAOKE</td>
+            <td>Seksyen 14, Shah Alam</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2018-01-26.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Lobby Lounge Concorde Hotel Shah Alam</td>
+            <td>3, Jalan Tengku Ampuan Zabedah C9/C, Seksyen 9, Shah Alam</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2017-08-31.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Bistro Anggerik</td>
+            <td>1, Jalan Tengku Ampuan Zabedah E 9/E, Seksyen 9, Shah Alam</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/noimage.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Pacific</td>
+            <td>No. 1, Jalan Penang</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2018-08-08.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Chang Shen F&amp;B Supply</td>
+            <td>13, Jalan Kampung Jawa Lama, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/noimage.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Shin Huat (Pasar Chowrasta)</td>
+            <td>123, 10000, Lebuh Tamil, Georgetown, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/IMG_20180113_113250.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Jeruk Tempayan</td>
+            <td>No 1, Jalan Chowrasta, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2016-11-26.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Mydin</td>
+            <td>Lebuh Chulia, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2018-11-11.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>DnG Penang Chain Store</td>
+            <td>131b, Jalan Hutton, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2017-04-16.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>瑞安和酱园 Swee on Woh Sauce Factory</td>
+            <td>Lebuh Noordin, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/noimage.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>merchant hotel</td>
+            <td>Penang Street, Georgetown, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/IMG_20170428_191024_587.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Sri Ganga Store Sdn Bhd</td>
+            <td>117, Lebuh Penang, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2018-03-29.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>PASARAYA RAMANI (RS SUPERSTORE SDN BHD)</td>
+            <td>
+              104, 102, 100, Penang Street, 10200, Pulau Pinang, Pulau Pinang
+            </td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/20170325_170817.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Pasaraya Ramani (RS SUPERSTORE SDN BHD)</td>
+            <td>59,57,61, 73, Lebuh Penang, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2017-10-20.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>M GALLERIA</td>
+            <td>
+              Ivory Tower, 77-4-1 &amp; 77-4-2, Jalan Dato Keramat, George Town
+            </td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2018-02-24.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>K1 Kaldnes</td>
+            <td>Sri Saujana Apartment, 42B-16-31 10300, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/noimage.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Giant Supermarket Penang Plaza</td>
+            <td>Penang Plaza, Ground Floor, 126, Jalan Burmah, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2017-03-21.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>大伯公</td>
+            <td>8, Jalan Nanking, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/noimage.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Kedai Runcit Chop Hoe Aik</td>
+            <td>
+              94, Jalan C. Y. Choy, Penang, 10300, Pulau Pinang, Pulau Pinang
+            </td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/noimage.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>D'Wonderful ( Sweet Corn Wholesaler )</td>
+            <td>G,136, 8, Gat Lebuh Macallum, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2018-03-22.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>D 'Orient Mall</td>
+            <td>Gat Lebuh Macalum, George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/noimage.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>联合顺有限公司</td>
+            <td>George Town</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2017-11-30.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Pan Marine Trading Sdn.bhd</td>
+            <td>petani Road, Jelutong</td>
+            <td>
+              <img
+                src="./EntertainNavigator - Entertainment Finder_files/2018-07-18.jpg"
+                width="200"
+                height="200"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById('myBtn').style.display = 'block';
+        } else {
+          document.getElementById('myBtn').style.display = 'none';
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>

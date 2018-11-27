@@ -1,0 +1,48 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.cover1 {
+  /* The image used */
+  background-image: url('http://ibpulse.com/wp-content/uploads/2016/05/entertainment.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #474545;
+  background-blend-mode: overlay;
+
+  opacity: 0.85;
+}
+
+.cover2 {
+  /* The image used */
+  background-image: url('http://ibpulse.com/wp-content/uploads/2016/05/entertainment.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #474545;
+  background-blend-mode: overlay;
+
+  opacity: 0.85;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
